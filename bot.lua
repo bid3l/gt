@@ -587,8 +587,8 @@ function tdcli_update_callback(data)
 								disable_notification_ = 1,
 								from_background_ = 1
 							}, dl_cb, nil)
-							if i % match.random(3,4) == 0 then
-								os.execute("sleep "..match.random(8,15))
+							if i % math.random(2,4) == 0 then
+								os.execute("sleep "..math.random(9,15))
 							end
 						end
 					else
